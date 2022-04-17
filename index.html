@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            bebas: ['Bebas Neue', 'cursive'],
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+
+<body>
+  
+  <!-- header section -->
+  
+  <header class="absolute top-0 z-10 flex justify-center w-full h-20 text-white bg-red-400 md:top-4 md:bg-transparent">
+    <nav class="flex items-center justify-center w-4/5 h-full md:justify-between font-bebas">
+      <h1 class="text-5xl tracking-wider"><a href="index.html">eTail.</a></h1>
+      <ul class="hidden text-xl gap-x-12 md:flex">
+        <li><a href="#about" class="transition-all duration-300 hover:text-red-400">About</a></li>
+        <li><a href="#services" class="transition-all duration-300 hover:text-red-400">Services</a></li>
+        <li><a href="#blog" class="transition-all duration-300 hover:text-red-400">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main section -->
+
+  <main>
+    
+    <!-- hero section -->
+    
+    <section class="h-screen w-full bg-[url('./images/bg.jpg')] bg-cover bg-no-repeat bg-center relative flex items-center">
+      <div class="absolute top-0 bottom-0 left-0 right-0 z-0 w-full h-full bg-black opacity-80"></div>
+      <div class="absolute z-10 w-full mx-0 text-center text-white md:text-left md:mx-20 font-bebas md:w-2/4 top-1/4">
+        <h4 class="mb-5 text-2xl tracking-wide">DIGITAL CONSULTING AGENCY</h4>
+        <h1 class="text-6xl lg:text-8xl">Unique Business</h1>
+        <h1 class="mb-5 text-6xl text-red-400 lg:text-8xl">Consulting.</h1>
+        <p class="mb-10 leading-8 font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in hic, excepturi illum repellat iure praesentium debitis vel dolor iusto corporis consectetur pariatur alias delectus quo totam, maxime recusandae sunt.</p>
+        <a href="#" class="py-2 text-xl transition-all duration-500 border-2 rounded-sm px-14 hover:bg-red-400 hover:border-red-400">Learn More</a>
+      </div>
+    </section> 
+
+    <!-- about us section -->
+    
+    <section id="about" class="p-10 ">
+      <div class="p-10 border-2 border-red-400">
+        <div class="lg:flex gap-x-10">
+          <div class="bg-[url('./images/img-1.png')] bg-no-repeat bg-cover bg-center w-full lg:w-2/4 h-[450px] flex justify-center items-end mb-10">
+            <h1 class="w-11/12 py-2 -mb-6 text-4xl text-center text-red-400 bg-white rounded-md drop-shadow-2xl font-bebas">Best creative agency</h1>
+          </div>
+          <div class="w-full mt-24 lg:mt-0 lg:w-2/4 font-bebas">
+            <h3 class="text-xl">About us</h3>
+            <h1 class="my-8 text-4xl">We’re motivated by the desire to achieve.</h1>
+            <p class="leading-8 mb-14 font-poppins">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem exercitationem esse nobis. Eaque dicta deserunt possimus labore, enim assumenda porro distinctio illo aliquam minus perferendis beatae quisquam nisi veritatis temporibus praesentium suscipit vitae? Delectus laboriosam reprehenderit totam dolorum quod error.</p>
+            <a href="#" class="py-2 text-xl transition-all duration-500 border-2 border-red-400 rounded-sm px-14 hover:bg-red-400 hover:border-red-400 hover:text-white">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- /#about -->
+    
+
+    
+  </main>
+
+
+
+
+
+
+
+  
+</body>
+
+</html>
